@@ -2,7 +2,7 @@
 
 require_relative "wslian_palindrome/version"
 
-module Palindrome
+module WslianPalindrome
   def palindrome?
     processed_content == processed_content.reverse
   end
@@ -17,9 +17,9 @@ module Palindrome
 end
 
 class String
-  include Palindrome
+  include WslianPalindrome
 end
 
 class Integer
-  include Palindrome
+  include WslianPalindrome
 end

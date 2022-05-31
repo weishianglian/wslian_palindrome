@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wslian_palindrome (0.1.0)
+    wslian_palindrome (1.0.0)
 
 GEM
   remote: https://rubygems.org/
