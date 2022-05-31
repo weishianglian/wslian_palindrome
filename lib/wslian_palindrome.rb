@@ -2,21 +2,24 @@
 
 require_relative "wslian_palindrome/version"
 
-# module WslianPalindrome
-#   class Error < StandardError; end
-#   # Your code goes here...
-# end
-
-class String
+module Palindrome
   def palindrome?
     processed_content == processed_content.reverse
   end
 
   def processed_content
-    downcase.letters
+    to_s.downcase.letters
   end
 
   def letters
-    scan(/[a-z]/i).join
+    scan(/[1-9a-z]/i).join
   end
+end
+
+class String
+  include Palindrome
+end
+
+class Integer
+  include Palindrome
 end

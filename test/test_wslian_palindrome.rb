@@ -22,4 +22,12 @@ class TestWslianPalindrome < Minitest::Test
   def test_letters
     assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
   end
+
+  def test_interger_non_palindrom
+    refute 12345.palindrome?
+  end
+  
+  def test_interger_palindrom
+    assert 12321.palindrome?
+  end
 end
